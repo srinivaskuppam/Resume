@@ -25,7 +25,21 @@ li1 {
  
 }
 
+  button{
+    color: white;
+    background-color: orange;
+    width: 100px;
+    height: 30px;
+    margin-top: 5px; 
+    border-radius: 50px; 
+    border: none;
+  }
 
+  button:hover{
+    color: white;
+    background-color: black;
+
+  }
      
 
     </style>
@@ -147,5 +161,13 @@ li1 {
     
       </div>
     </div>
+    <button id="btn">Print</button>
+    <script>
+      let l = document.getElementById('btn');
+      l.addEventListener('click', function(){
+        l.style.display = 'none';
+        window.print();
+      });
+    </script>
 </body>
-  </html>
+</html>
